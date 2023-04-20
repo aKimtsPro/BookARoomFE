@@ -1,0 +1,24 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>room id</mat-label>
+    <input matInput type="number" placeholder="room id"/>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>user id</mat-label>
+    <input matInput type="number" placeholder="user id"/>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>date</mat-label>
+    <input matInput type="date" placeholder="date"/>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>begins at</mat-label>
+    <input matInput type="time" placeholder="begins at"/>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>ends at</mat-label>
+    <input matInput type="time" placeholder="ends at"/>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit">submit</button>
+</form>

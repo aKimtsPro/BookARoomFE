@@ -1,0 +1,8 @@
+
+<mat-form-field appearance="fill">
+  <mat-label>request id</mat-label>
+  <input matInput type="number" placeholder="booking id" [(ngModel)]="bookingId"/>
+</mat-form-field>
+
+<button mat-raised-button color="primary" (click)="onSubmit()">accept</button>
+<button mat-raised-button color="warn">refuse</button>

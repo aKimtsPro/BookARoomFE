@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+mat-drawer-container{
+  padding-top: 64px;
+  height: 100%;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #434357;
+  height: 64px;
+  width: 100%;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+nav {
+  margin-top: 64px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 128px);
+}
+
+main {
+  padding: 20px;
+}

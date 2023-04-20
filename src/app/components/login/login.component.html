@@ -1,0 +1,17 @@
+<h2>Login form</h2>
+
+<form [formGroup]="form" (ngSubmit)="connect()">
+
+  <mat-form-field appearance="fill">
+    <mat-label>username</mat-label>
+    <input matInput type="text" placeholder="username" formControlName="username">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>password</mat-label>
+    <input matInput type="password" placeholder="password" formControlName="password"/>
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" type="submit">se connecter</button>
+
+</form>

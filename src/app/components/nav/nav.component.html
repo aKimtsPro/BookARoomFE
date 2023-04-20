@@ -1,0 +1,15 @@
+
+<nav>
+  <div>
+    <p routerLink="/home">home</p>
+    <p routerLink="/rooms">rooms</p>
+    <p routerLink="/request">request</p>
+    <p routerLink="/request/create">request create</p>
+  </div>
+
+  <div>
+    <p>
+      <button mat-flat-button color="primary" routerLink="/login">{{ (authService.connected$ | async) ? 'logout' : 'login'}}</button>
+    </p>
+  </div>
+</nav>
